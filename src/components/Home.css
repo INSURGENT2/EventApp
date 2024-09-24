@@ -1,0 +1,38 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* Light text color */
+  }
+  
+  .home-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-container p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .home-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+  }
+  
+  .home-link {
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background */
+    color: #ffffff; /* Button text color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .home-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

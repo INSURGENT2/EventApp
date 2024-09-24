@@ -1,0 +1,55 @@
+.exhibitor-login-container {
+    background-color: #1E1E2F; /* Dark background */
+    color: white; /* Light text color */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-button {
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+  
+  .event-form, .request-list {
+    margin-top: 20px;
+  }
+  
+  .submit-button, .approve-button {
+    background-color: #28A745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover, .approve-button:hover {
+    background-color: #218838; /* Darker on hover */
+  }
+  
+  .request-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .request-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
