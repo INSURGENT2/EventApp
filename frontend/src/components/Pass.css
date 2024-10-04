@@ -1,3 +1,175 @@
-.h1 {
-  color: white;
+/* Container */
+.container {
+ 
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #1e1e1e, #121212);
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form styles */
+.input-form {
+  background: linear-gradient(145deg, #2a2a2a,#6d7579);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-form h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #cccccc;
+  font-weight: 500;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  outline: none;
+}
+
+input::placeholder, select {
+  color: #888888;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+.generate-btn, .download-btn, .reset-btn {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.generate-btn:hover, .download-btn:hover, .reset-btn:hover {
+  background-color: #e5533f;
+}
+
+/* Pass container */
+.pass-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pass-container {
+  width: 350px;
+  background: linear-gradient(135deg, #1a1a1a, #282828);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Top section (Event Image) */
+.top-section {
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Middle section (User's Name and Date) */
+.middle-section {
+  padding: 25px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.middle-section h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.pass-date {
+  font-size: 18px;
+  color: #bfc9d1;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* QR code section */
+.qr-code-section {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.download-btn, .reset-btn {
+  flex: 1;
+}
+
+.reset-btn {
+  background-color: #7f8c8d;
+}
+
+.reset-btn:hover {
+  background-color: #6d7579;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .pass-container {
+    width: 100%;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
 }

@@ -47,6 +47,7 @@ const Navbar = () => {
             Events
           </Link>
         </li>
+       
       </ul>
 
       <div className="login">

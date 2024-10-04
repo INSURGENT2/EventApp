@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
 import event from "../assets/event1.png";
 import logo from "../assets/logo.png";
@@ -48,7 +49,9 @@ const Home = () => {
                 <p>Pune, Maharashtra</p>
               </div>
             </div>
-            <div className="about-event">
+
+            {/* Button container */}
+            <div className="buttons-container">
               <a
                 href="https://ciiwrevents.in/NexGenMobilityShow2024/"
                 target="_blank"
@@ -57,6 +60,16 @@ const Home = () => {
               >
                 About Event
               </a>
+              <Link to="/pass" className="nav-link">
+                <a
+                  href="https://ciiwrevents.in/NexGenMobilityShow2024/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="about-event-link"
+                >
+                  Get Pass
+                </a>
+              </Link>
             </div>
           </div>
         </div>

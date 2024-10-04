@@ -4,6 +4,7 @@
   color: white;
   display: flex;
   justify-content: center;
+  background-color: black;
 }
 
 .left {
@@ -237,3 +238,11 @@
 .about-event-link:hover {
   background-color: rgb(223, 103, 241);
 }
+
+/* Container for the buttons */
+.buttons-container {
+  display: flex;
+  gap: 15px; /* Adds space between the two buttons */
+  margin-top: 20px; /* Adjusts the space above the buttons */
+}
+
